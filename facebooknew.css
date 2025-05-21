@@ -1,0 +1,164 @@
+/* בסיס */
+body {
+    margin: 0;
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+    color: #050505;
+  }
+  
+  /* סרגל עליון */
+  .top-bar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+  
+  .left-section, .center-section, .right-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .search-icon {
+    font-size: 20px;
+    color: #606770;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .center-section {
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .right-section {
+    gap: 10px;
+  }
+  
+  .right-section i {
+    font-size: 22px;
+    color: #606770;
+    cursor: pointer;
+  }
+  
+  .right-section i.active {
+    color: #1877f2;
+    border-bottom: 2px solid #1877f2;
+    padding-bottom: 4px;
+  }
+  
+  .profile-name {
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  
+  .profile-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #d8d8d8;
+    border-radius: 50%;
+  }
+  
+  /* חלוקה לשלוש עמודות */
+  .container {
+    display: grid;
+    grid-template-columns: 270px 600px 270px;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* סרגל צדדי */
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .left-sidebar .block,
+  .right-sidebar .menu-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+  
+  .right-sidebar .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .right-sidebar .menu-item:hover {
+    background-color: #e4e6eb;
+  }
+  
+  /* פיד אמצעי */
+  .feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .create-post {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+  
+  .post-options {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+  
+  .post-options span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+  }
+  
+  .stories {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .story {
+    background-color: #ffffff;
+    width: 110px;
+    height: 190px;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+  
+  .post-placeholder {
+    background-color: #ffffff;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+  
